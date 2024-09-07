@@ -243,6 +243,7 @@ func dependencies_for_docs() {
 		if err := c.Run(); err != nil {
 			exit(err)
 		}
+
 	}
 	run(python, gp.Name())
 	run(python, "-m", "pip", "install", "-r", "docs/requirements.txt")
